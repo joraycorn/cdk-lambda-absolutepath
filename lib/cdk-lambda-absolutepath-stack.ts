@@ -7,7 +7,7 @@ export class CdkLambdaAbsolutepathStack extends cdk.Stack {
 
     // The code that defines your stack goes here
 
-    new lambda.Function(scope, `test`, {
+    new lambda.Function(this, `test`, {
       code: lambda.AssetCode.fromAsset('lib/test-code'),
       functionName: 'test',
       handler: 'code.handler',
